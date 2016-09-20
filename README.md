@@ -1,6 +1,10 @@
 # Animate_listView
-animated listView and flyImg
+Animated listView and flyImg
 
-[![Example android](https://youtu.be/5Naji35O1TY)](https://youtu.be/5Naji35O1TY)
+# Example Android
 
-[![Example iOS](https://youtu.be/Lon7wXevZ6g)](https://youtu.be/Lon7wXevZ6g)
+[![Example android](https://github.com/SergeyMNet/Animate_listView/blob/master/scr/Screenshot.png)](https://youtu.be/5Naji35O1TY)
+
+# Example iOS
+
+[![Example iOS](https://github.com/SergeyMNet/Animate_listView/blob/master/scr/Screenshot.png)](https://youtu.be/Lon7wXevZ6g)
