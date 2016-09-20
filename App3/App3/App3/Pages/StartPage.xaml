@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Pages.StartPage" BackgroundColor="#E5E5E5">
+  <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Vertical" BackgroundColor="#E5E5E5">
+    
+  <!--<Button Text="Page 1 - touch listner" TextColor="Black" BackgroundColor="White" Clicked="Button_OnClicked" HorizontalOptions="FillAndExpand"/>
+  
+  <Button Text="Page 2 - header fly img" TextColor="Black" BackgroundColor="White" Clicked="Button2_OnClicked" HorizontalOptions="FillAndExpand"/>-->
+
+  <Button Text="Page - Full animation (apper/dissap first element)" TextColor="Black" BackgroundColor="White" Clicked="Button3_OnClicked" HorizontalOptions="FillAndExpand"/>
+
+  <Button Text="Page - Full animation with touch listner" TextColor="Black" BackgroundColor="White" Clicked="Button4_OnClicked" HorizontalOptions="FillAndExpand"/>
+    
+  </StackLayout>
+</ContentPage>

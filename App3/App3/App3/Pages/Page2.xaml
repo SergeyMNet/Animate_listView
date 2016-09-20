@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Pages.Page2">
+  <Grid>
+    <Image Source="alp.jpg" Aspect="AspectFill" />
+    <StackLayout BackgroundColor="Transparent">
+      <ListView x:Name="InfoList" HorizontalOptions="CenterAndExpand" HasUnevenRows="True" SeparatorColor="#B1B1B1" ItemAppearing="InfoList_OnItemAppearing">
+        <ListView.Header>
+          <StackLayout x:Name="Head" VerticalOptions="StartAndExpand" BackgroundColor="White" >
+            <Image x:Name="MainImage" Source="Everest.jpeg" Aspect="AspectFit" />
+          </StackLayout>
+        </ListView.Header>
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Padding="10" Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand" BackgroundColor="White" Opacity="0.8">
+                <Image Source="icon.jpg" Aspect="AspectFit" HeightRequest="50"  BackgroundColor="Transparent" HorizontalOptions="StartAndExpand"  />
+                <StackLayout Padding="20,0,0,0" HorizontalOptions="EndAndExpand">
+                  <Label Text="{Binding Text}" TextColor="Black" FontSize="20" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </Grid>
+</ContentPage>

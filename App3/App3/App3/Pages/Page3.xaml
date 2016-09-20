@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:App3.Controls;assembly=App3"
+             x:Class="App3.Pages.Page3">
+  <StackLayout x:Name="LayoutTouchListnerCtrl" Orientation="Vertical" Spacing="0">
+    
+    <Grid Padding="0">
+      <StackLayout x:Name="Head" VerticalOptions="StartAndExpand" BackgroundColor="White">
+        <Image x:Name="MainImage" Source="mount.jpg" Aspect="AspectFit" />
+      </StackLayout>
+      
+      <Grid x:Name="MenuGrid" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="20,10,0,10">
+        <Image x:Name="ico" Source="icon.png" Aspect="AspectFit" HorizontalOptions="StartAndExpand" />
+        <Label x:Name="TitleLabel" Text="My Title" FontSize="25" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalTextAlignment="Center" VerticalOptions="Center" />
+      </Grid>
+    </Grid>
+    
+    <StackLayout x:Name="Body" VerticalOptions="EndAndExpand" BackgroundColor="#E2E2E2" Padding="0">
+      <ListView x:Name="InfoList" HorizontalOptions="CenterAndExpand" HasUnevenRows="True" SeparatorVisibility="None">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            
+            <controls:SearchPageViewCellWithId FirstApper="SearchPageViewCellWithId_OnFirstApper" FirstDisapp="SearchPageViewCellWithId_OnFirstDisapp" ItemId="{Binding Id}">
+              <StackLayout BackgroundColor="Transparent" Padding="5">
+                <Frame Padding="5" BackgroundColor="White">
+                  <StackLayout Padding="5" Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+                    <Image Source="icon.png" Aspect="AspectFit" HeightRequest="50"  BackgroundColor="Transparent" HorizontalOptions="StartAndExpand"  />
+                    <StackLayout Padding="20,0,0,0" HorizontalOptions="EndAndExpand">
+                      <Label Text="{Binding Text}" TextColor="Black" FontSize="20" VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                  </StackLayout>
+                </Frame>
+              </StackLayout>              
+            </controls:SearchPageViewCellWithId>
+            
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+    
+  </StackLayout>
+</ContentPage>

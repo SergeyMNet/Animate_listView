@@ -1,0 +1,2 @@
+D:\VS_Projects\App3\App3\App3.WinPhone\App3.WinPhone.csproj;x86
+D:\VS_Projects\App3\App3\App3\App3.csproj;neutral

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:App3.Controls;assembly=App3"
+             x:Class="App3.Pages.Page1">
+  <controls:LayoutTouchListner x:Name="LayoutTouchListnerCtrl" Orientation="Vertical" TouchEvent="LayoutTouchListner_OnTouchEvent">
+    <StackLayout x:Name="Head" VerticalOptions="StartAndExpand" BackgroundColor="White">
+      <Image x:Name="MainImage" Source="mount.jpg" Aspect="AspectFit" />
+    </StackLayout>
+    <StackLayout x:Name="Body" VerticalOptions="EndAndExpand" BackgroundColor="White">
+      <ListView x:Name="InfoList" HorizontalOptions="CenterAndExpand" HasUnevenRows="True" SeparatorColor="#B1B1B1" >
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                  <StackLayout Padding="10" Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+                    <Image Source="icon.png" Aspect="AspectFit" HeightRequest="50"  BackgroundColor="Transparent" HorizontalOptions="StartAndExpand"  />
+                    <StackLayout Padding="20,0,0,0" HorizontalOptions="EndAndExpand">
+                      <Label Text="{Binding Text}" TextColor="Black" FontSize="20" VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                  </StackLayout>
+                </ViewCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+    </StackLayout>
+  </controls:LayoutTouchListner>
+
+
+</ContentPage>
