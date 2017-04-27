@@ -12,8 +12,8 @@ public class ActionSheetRenderer
 	static {
 		__md_methods = 
 			"n_cancel:()V:GetCancelHandler\n" +
-			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onAttachedToWindow:()V:GetOnAttachedToWindowHandler\n" +
+			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onClick:(Landroid/view/View;)V:GetOnClick_Landroid_view_View_Handler:Android.Views.View/IOnClickListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.ActionSheetRenderer, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null", ActionSheetRenderer.class, __md_methods);
@@ -52,20 +52,20 @@ public class ActionSheetRenderer
 	private native void n_cancel ();
 
 
-	public void onCreate (android.os.Bundle p0)
-	{
-		n_onCreate (p0);
-	}
-
-	private native void n_onCreate (android.os.Bundle p0);
-
-
 	public void onAttachedToWindow ()
 	{
 		n_onAttachedToWindow ();
 	}
 
 	private native void n_onAttachedToWindow ();
+
+
+	public void onCreate (android.os.Bundle p0)
+	{
+		n_onCreate (p0);
+	}
+
+	private native void n_onCreate (android.os.Bundle p0);
 
 
 	public void onClick (android.view.View p0)

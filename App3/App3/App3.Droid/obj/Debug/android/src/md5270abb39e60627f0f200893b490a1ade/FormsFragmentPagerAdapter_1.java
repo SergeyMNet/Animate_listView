@@ -15,6 +15,7 @@ public class FormsFragmentPagerAdapter_1
 			"n_getItemId:(I)J:GetGetItemId_IHandler\n" +
 			"n_getItemPosition:(Ljava/lang/Object;)I:GetGetItemPosition_Ljava_lang_Object_Handler\n" +
 			"n_getPageTitle:(I)Ljava/lang/CharSequence;:GetGetPageTitle_IHandler\n" +
+			"n_restoreState:(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V:GetRestoreState_Landroid_os_Parcelable_Ljava_lang_ClassLoader_Handler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null", FormsFragmentPagerAdapter_1.class, __md_methods);
 	}
@@ -24,7 +25,7 @@ public class FormsFragmentPagerAdapter_1
 	{
 		super (p0);
 		if (getClass () == FormsFragmentPagerAdapter_1.class)
-			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Support.V4.App.FragmentManager, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Support.V4.App.FragmentManager, Xamarin.Android.Support.Fragment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", this, new java.lang.Object[] { p0 });
 	}
 
 
@@ -66,6 +67,14 @@ public class FormsFragmentPagerAdapter_1
 	}
 
 	private native java.lang.CharSequence n_getPageTitle (int p0);
+
+
+	public void restoreState (android.os.Parcelable p0, java.lang.ClassLoader p1)
+	{
+		n_restoreState (p0, p1);
+	}
+
+	private native void n_restoreState (android.os.Parcelable p0, java.lang.ClassLoader p1);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

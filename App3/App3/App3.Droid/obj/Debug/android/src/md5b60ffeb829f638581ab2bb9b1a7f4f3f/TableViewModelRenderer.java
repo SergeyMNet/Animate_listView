@@ -10,13 +10,13 @@ public class TableViewModelRenderer
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_isEnabled:(I)Z:GetIsEnabled_IHandler\n" +
-			"n_areAllItemsEnabled:()Z:GetAreAllItemsEnabledHandler\n" +
 			"n_getCount:()I:GetGetCountHandler\n" +
+			"n_getItem:(I)Ljava/lang/Object;:GetGetItem_IHandler\n" +
 			"n_getViewTypeCount:()I:GetGetViewTypeCountHandler\n" +
+			"n_areAllItemsEnabled:()Z:GetAreAllItemsEnabledHandler\n" +
 			"n_getItemId:(I)J:GetGetItemId_IHandler\n" +
 			"n_getView:(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;:GetGetView_ILandroid_view_View_Landroid_view_ViewGroup_Handler\n" +
-			"n_getItem:(I)Ljava/lang/Object;:GetGetItem_IHandler\n" +
+			"n_isEnabled:(I)Z:GetIsEnabled_IHandler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.TableViewModelRenderer, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null", TableViewModelRenderer.class, __md_methods);
 	}
@@ -37,22 +37,6 @@ public class TableViewModelRenderer
 	}
 
 
-	public boolean isEnabled (int p0)
-	{
-		return n_isEnabled (p0);
-	}
-
-	private native boolean n_isEnabled (int p0);
-
-
-	public boolean areAllItemsEnabled ()
-	{
-		return n_areAllItemsEnabled ();
-	}
-
-	private native boolean n_areAllItemsEnabled ();
-
-
 	public int getCount ()
 	{
 		return n_getCount ();
@@ -61,12 +45,28 @@ public class TableViewModelRenderer
 	private native int n_getCount ();
 
 
+	public java.lang.Object getItem (int p0)
+	{
+		return n_getItem (p0);
+	}
+
+	private native java.lang.Object n_getItem (int p0);
+
+
 	public int getViewTypeCount ()
 	{
 		return n_getViewTypeCount ();
 	}
 
 	private native int n_getViewTypeCount ();
+
+
+	public boolean areAllItemsEnabled ()
+	{
+		return n_areAllItemsEnabled ();
+	}
+
+	private native boolean n_areAllItemsEnabled ();
 
 
 	public long getItemId (int p0)
@@ -85,12 +85,12 @@ public class TableViewModelRenderer
 	private native android.view.View n_getView (int p0, android.view.View p1, android.view.ViewGroup p2);
 
 
-	public java.lang.Object getItem (int p0)
+	public boolean isEnabled (int p0)
 	{
-		return n_getItem (p0);
+		return n_isEnabled (p0);
 	}
 
-	private native java.lang.Object n_getItem (int p0);
+	private native boolean n_isEnabled (int p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

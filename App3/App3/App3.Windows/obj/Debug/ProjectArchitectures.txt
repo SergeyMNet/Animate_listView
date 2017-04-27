@@ -1,2 +1,0 @@
-D:\VS_Projects\App3\App3\App3.Windows\App3.Windows.csproj;neutral
-D:\VS_Projects\App3\App3\App3\App3.csproj;neutral

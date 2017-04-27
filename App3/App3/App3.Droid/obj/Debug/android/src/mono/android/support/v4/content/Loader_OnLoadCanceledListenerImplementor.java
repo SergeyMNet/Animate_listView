@@ -11,9 +11,9 @@ public class Loader_OnLoadCanceledListenerImplementor
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onLoadCanceled:(Landroid/support/v4/content/Loader;)V:GetOnLoadCanceled_Landroid_support_v4_content_Loader_Handler:Android.Support.V4.Content.Loader/IOnLoadCanceledListenerInvoker, Xamarin.Android.Support.v4\n" +
+			"n_onLoadCanceled:(Landroid/support/v4/content/Loader;)V:GetOnLoadCanceled_Landroid_support_v4_content_Loader_Handler:Android.Support.V4.Content.Loader/IOnLoadCanceledListenerInvoker, Xamarin.Android.Support.Core.Utils\n" +
 			"";
-		mono.android.Runtime.register ("Android.Support.V4.Content.Loader+IOnLoadCanceledListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", Loader_OnLoadCanceledListenerImplementor.class, __md_methods);
+		mono.android.Runtime.register ("Android.Support.V4.Content.Loader+IOnLoadCanceledListenerImplementor, Xamarin.Android.Support.Core.Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", Loader_OnLoadCanceledListenerImplementor.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class Loader_OnLoadCanceledListenerImplementor
 	{
 		super ();
 		if (getClass () == Loader_OnLoadCanceledListenerImplementor.class)
-			mono.android.TypeManager.Activate ("Android.Support.V4.Content.Loader+IOnLoadCanceledListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Android.Support.V4.Content.Loader+IOnLoadCanceledListenerImplementor, Xamarin.Android.Support.Core.Utils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 
