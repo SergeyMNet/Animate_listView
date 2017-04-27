@@ -1,7 +1,7 @@
 # Animate_listView
 Animated listView and flyImg
 
-https://www.bitrise.io/app/c4d398deca7e1dfa.svg?token=LbUl493PLU7ys_NoZLcekg&branch=master
+![](https://www.bitrise.io/app/c4d398deca7e1dfa.svg?token=LbUl493PLU7ys_NoZLcekg&branch=master)
 
 # Example Android
 
